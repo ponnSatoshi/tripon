@@ -2,13 +2,30 @@
 /*
 * margin
 */
-.mg30 { margin-top: 30px; margin-bottom: 30px; }
+.mg30 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
 
-.mgT30 { margin-top: 30px; }
+.mgT30 {
+  margin-top: 30px;
+}
 
-.mgB30 { margin-bottom: 30px; }
+.mgB10 {
+  margin-bottom: 10px !important;
+}
+
+.mgB20 {
+  margin-bottom: 20px !important;
+}
+
+.mgB30 {
+  margin-bottom: 30px !important;
+}
 
 /*
 * padding
 */
-.paT30 { padding-top: 30px; }
+.paT30 {
+  padding-top: 30px;
+}

@@ -1,38 +1,14 @@
 /* common.css */
 
-/* --------------------- *
-* 各変数
-* ---------------------- */
-@mixin textShadow () {
-	-webkit-text-shadow: -1px -1px 1px #000000;
-	-moz-text-shadow: -1px -1px 1px #000000;
-	text-shadow: -1px -1px 1px #000000;
-}
-
-@mixin boxShadow01 ($type) {
-	-webkit-box-shadow: 2px 2px 4px $type;
-	-moz-box-shadow: 2px 2px 4px $type;
-	box-shadow: 2px 2px 4px $type;
-}
-
-@mixin bgSize ($type:contain) {
-	-webkit-background-size: $type;
-	-moz-background-size: $type;
-	background-size: $type;
-}
-
-@mixin borderRadius ($type:50%) {
-	-webkit-border-radius: $type;
-	-moz-border-radius: $type;
-	border-radius: $type;
-}
-
+@import 'mix';
 
 a {
-	text-decoration: none;
+	// text-decoration: none;
+	color: #ffffff;
 }
 
 html {
+	font-size: 62.5%;
 	background-color: #4bb86f;
 }
 
@@ -42,7 +18,9 @@ body {
 	margin: 0 auto;
 	width: 320px;
 	background-color: #ffffff;
-	color: #4bb86f
+	line-height: 140%;
+	color: #4bb86f;
+	font-size: 14px; font-size: 1.4rem;
 }
 
 header {
@@ -106,39 +84,16 @@ header {
 #mainVisualContainer {
 	position: relative;
 	width: 100%;
+	height: auto;
+	background: url('../images/cover/main001.jpg') no-repeat center;
+	@include bgSize(cover);
 
-	#mainVisualBox {
-		position: relative;
-		width: 100%;
-
-		img {
-			width: 100%;
-		}
-	}
-
-}
-
-#icon_rogo {
-	width: 100%;
-	text-align: center;
 }
 
 #newAccountContainer {
+	margin: 0 auto;
 	width: 100%;
-
-	.iconBox {
-		text-align: center;
-
-		img {
-			width: 20%;
-			@include borderRadius();
-			border: 3px solid #dcdcdc;
-		}
-	}
-
-	img {
-
-	}
+	text-align: center;
 }
 
 /*
@@ -150,35 +105,35 @@ header {
 	text-align: center;
 
 	&.type-login {
-		position: absolute;
-		bottom: 10px;
-		left: 25%;
+		position: relative;
+		padding-top: 80%;
+
+		#btn_login {
+		}
+		a {
+		}
 	}
 
  	a {
 		display: block;
 		margin: 0 auto;
-		padding: 0.5em 0;
-		width: 80%;
-		border: 3px solid #ffffff;
+		padding: 0.8em 0;
+		width: 40%;
+		border: 1px solid #cacaca;
 		background-color: #ffffff;
 		text-align: center;
+		text-decoration: none;
 		color: #666666;
-		font-weight: 900;
+		font-weight: 600;
 		font-size: 14px; font-size: 1.4rem;
 
 		@include borderRadius(4px);
-
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(1.00, #e0e0e0), color-stop(0.00, #fff));
+		background: -webkit-linear-gradient(#fff, #e0e0e0);
+		background: -moz-linear-gradient(#fff, #e0e0e0);
+		background: linear-gradient(#fff, #e0e0e0);
  	}
 
-	#btn_login {
-
-		 a {
-
-		 	background-color: #000000;
-
-		}
-	}
 
 
 }
@@ -190,6 +145,10 @@ header {
 
 .comentBox {
 	text-align: center;
+
+	&#askHelpBox {
+		font-size: 12px; font-size: 1.2rem;
+	}
 }
 
 #copyRight {
