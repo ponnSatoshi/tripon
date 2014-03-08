@@ -133,9 +133,6 @@ header #btn_menu {
   -moz-border-radius: 4px;
   border-radius: 4px;
 }
-.btnBox #btn_login a {
-  background-color: #000000;
-}
 
 /*
 * commentBox
