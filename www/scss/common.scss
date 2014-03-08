@@ -1,0 +1,195 @@
+/* common.css */
+
+/* --------------------- *
+* 各変数
+* ---------------------- */
+@mixin textShadow () {
+	-webkit-text-shadow: -1px -1px 1px #000000;
+	-moz-text-shadow: -1px -1px 1px #000000;
+	text-shadow: -1px -1px 1px #000000;
+}
+
+@mixin boxShadow01 ($type) {
+	-webkit-box-shadow: 2px 2px 4px $type;
+	-moz-box-shadow: 2px 2px 4px $type;
+	box-shadow: 2px 2px 4px $type;
+}
+
+@mixin bgSize ($type:contain) {
+	-webkit-background-size: $type;
+	-moz-background-size: $type;
+	background-size: $type;
+}
+
+@mixin borderRadius ($type:50%) {
+	-webkit-border-radius: $type;
+	-moz-border-radius: $type;
+	border-radius: $type;
+}
+
+
+a {
+	text-decoration: none;
+}
+
+html {
+	background-color: #4bb86f;
+}
+
+body {
+	position: relative;
+	z-index: 1;
+	margin: 0 auto;
+	width: 320px;
+	background-color: #ffffff;
+	color: #4bb86f
+}
+
+header {
+	position: relative;
+	overflow: hidden;
+	top: 0px;
+	margin: 0 auto;
+	padding: 0.5em 0;
+	width: 100%;
+	border-bottom: 1px solid #fafafa;
+
+	#btn_home {
+		float: right;
+	}
+
+	#btn_menu {
+		display: block;
+		float: left;
+	}
+
+}
+
+#maincolum-Container {
+	position: relative;
+	z-index: 100;
+}
+
+/*
+* sideBar
+*/
+
+#sideBar-Container {
+	position: absolute;
+	z-index: 0;
+	top: 0;
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(23,49,18,0.6);
+
+	&.def {
+		z-index: 10000;
+		opacity: 1;
+	}
+}
+
+#sideBar {
+	width: 45%;
+	height: 100%;
+	background-color: #fefefe;
+	@include boxShadow01(#353535);
+
+	.menuTitle {
+		padding: 8px 0;
+		text-align: center;
+		color: #4bb86f;
+		border-bottom: 1px solid #a1a1a1;
+	}
+}
+
+#mainVisualContainer {
+	position: relative;
+	width: 100%;
+
+	#mainVisualBox {
+		position: relative;
+		width: 100%;
+
+		img {
+			width: 100%;
+		}
+	}
+
+}
+
+#icon_rogo {
+	width: 100%;
+	text-align: center;
+}
+
+#newAccountContainer {
+	width: 100%;
+
+	.iconBox {
+		text-align: center;
+
+		img {
+			width: 20%;
+			@include borderRadius();
+			border: 3px solid #dcdcdc;
+		}
+	}
+
+	img {
+
+	}
+}
+
+/*
+* btn
+*/
+
+.btnBox {
+	width: 100%;
+	text-align: center;
+
+	&.type-login {
+		position: absolute;
+		bottom: 10px;
+		left: 25%;
+	}
+
+ 	a {
+		display: block;
+		margin: 0 auto;
+		padding: 0.5em 0;
+		width: 80%;
+		border: 3px solid #ffffff;
+		background-color: #ffffff;
+		text-align: center;
+		color: #666666;
+		font-weight: 900;
+		font-size: 14px; font-size: 1.4rem;
+
+		@include borderRadius(4px);
+
+ 	}
+
+	#btn_login {
+
+		 a {
+
+		}
+	}
+
+ 	
+}
+
+
+/*
+* commentBox
+*/
+
+.comentBox {
+	text-align: center;
+}
+
+#copyRight {
+	text-align: center;
+}

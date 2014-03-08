@@ -1,0 +1,14 @@
+/* layout.css */
+/*
+* margin
+*/
+.mg30 { margin-top: 30px; margin-bottom: 30px; }
+
+.mgT30 { margin-top: 30px; }
+
+.mgB30 { margin-bottom: 30px; }
+
+/*
+* padding
+*/
+.paT30 { padding-top: 30px; }

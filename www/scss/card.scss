@@ -1,0 +1,49 @@
+/* card.css */
+
+/* --------------------- *
+* 各変数
+* ---------------------- */
+@mixin textShadow () {
+	-webkit-text-shadow: -1px -1px 1px #000000;
+	-moz-text-shadow: -1px -1px 1px #000000;
+	text-shadow: -1px -1px 1px #000000;
+}
+
+@mixin boxShadow01 ($type) {
+	-webkit-box-shadow: 2px 2px 4px $type;
+	-moz-box-shadow: 2px 2px 4px $type;
+	box-shadow: 2px 2px 4px $type;
+}
+
+@mixin bgSize ($type:contain) {
+	-webkit-background-size: $type;
+	-moz-background-size: $type;
+	background-size: $type;
+}
+
+#serchBox {
+	position: relative;
+	overflow: hidden;
+	padding: 50px 0;
+	width: 100%;
+
+	form {
+		position: relative;
+		z-index: 3;
+		text-align: center;
+		font-size: 20px;
+
+		input {
+			margin: 0 auto;
+			width: 64%;
+			height: 24px;
+		}
+	}
+
+	img {
+		position: absolute;
+		top: -13em;
+		z-index: 2;
+		width: 120%;
+	}
+}

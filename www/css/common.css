@@ -1,0 +1,146 @@
+@charset "UTF-8";
+/* common.css */
+/* --------------------- *
+* 各変数
+* ---------------------- */
+a {
+  text-decoration: none;
+}
+
+html {
+  background-color: #4bb86f;
+}
+
+body {
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+  width: 320px;
+  background-color: #ffffff;
+  color: #4bb86f;
+}
+
+header {
+  position: relative;
+  overflow: hidden;
+  top: 0px;
+  margin: 0 auto;
+  padding: 0.5em 0;
+  width: 100%;
+  border-bottom: 1px solid #fafafa;
+}
+header #btn_home {
+  float: right;
+}
+header #btn_menu {
+  display: block;
+  float: left;
+}
+
+#maincolum-Container {
+  position: relative;
+  z-index: 100;
+}
+
+/*
+* sideBar
+*/
+#sideBar-Container {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(23, 49, 18, 0.6);
+}
+#sideBar-Container.def {
+  z-index: 10000;
+  opacity: 1;
+}
+
+#sideBar {
+  width: 45%;
+  height: 100%;
+  background-color: #fefefe;
+  -webkit-box-shadow: 2px 2px 4px #353535;
+  -moz-box-shadow: 2px 2px 4px #353535;
+  box-shadow: 2px 2px 4px #353535;
+}
+#sideBar .menuTitle {
+  padding: 8px 0;
+  text-align: center;
+  color: #4bb86f;
+  border-bottom: 1px solid #a1a1a1;
+}
+
+#mainVisualContainer {
+  position: relative;
+  width: 100%;
+}
+#mainVisualContainer #mainVisualBox {
+  position: relative;
+  width: 100%;
+}
+#mainVisualContainer #mainVisualBox img {
+  width: 100%;
+}
+
+#icon_rogo {
+  width: 100%;
+  text-align: center;
+}
+
+#newAccountContainer {
+  width: 100%;
+}
+#newAccountContainer .iconBox {
+  text-align: center;
+}
+#newAccountContainer .iconBox img {
+  width: 20%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  border: 3px solid #dcdcdc;
+}
+
+/*
+* btn
+*/
+.btnBox {
+  width: 100%;
+  text-align: center;
+}
+.btnBox.type-login {
+  position: absolute;
+  bottom: 10px;
+  left: 25%;
+}
+.btnBox a {
+  display: block;
+  margin: 0 auto;
+  padding: 0.5em 0;
+  width: 80%;
+  border: 3px solid #ffffff;
+  background-color: #ffffff;
+  text-align: center;
+  color: #666666;
+  font-weight: 900;
+  font-size: 14px;
+  font-size: 1.4rem;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+/*
+* commentBox
+*/
+.comentBox {
+  text-align: center;
+}
+
+#copyRight {
+  text-align: center;
+}
