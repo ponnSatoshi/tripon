@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../css/layout.css">
+<link rel="stylesheet" href="../css/common.css">
+<link rel="stylesheet" href="../css/entry.css">
+<script type="text/javascript" src="../js/lib/jquery.min.js"></script>
+<script>
+
+$(function() {
+
+    var windowHeight = window.innerHeight; 
+
+    $("body").css('height', windowHeight);
+
+    $('footer').css('top', windowHeight + parseInt($('footer').css('height')));
+
+})
+
+</script>
+</head>
+<body>
+
+    <section id="mainColum">
+
+        <section id="entryStepContainer">
+
+            <section id="infoBox" class="comentBox">
+                Hi!
+                <br>
+                What's your name?
+            </section>
+
+            <section id="inputNameBox">
+                <form>
+                    <input type="text">
+                </form>
+
+            </section>
+
+        </section>
+
+        <footer class="mgB30">
+            <section id="copyRight">
+                <span>abc.inc</span>
+            </section>
+        </footer>
+
+    </section>
+    <!-- //#mainColum -->
+
+
+</body>
+
+</html>

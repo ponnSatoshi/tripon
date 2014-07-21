@@ -9,6 +9,8 @@ a {
 
 html {
 	font-size: 62.5%;
+	height: auto;
+	min-height: 100%;
 	background-color: #4bb86f;
 }
 
@@ -16,10 +18,11 @@ body {
 	position: relative;
 	z-index: 1;
 	margin: 0 auto;
-	width: 320px;
-	background-color: #ffffff;
+	width: 640px;
+	height: 100%;
+	background-color: #4bb86f;
 	line-height: 140%;
-	color: #4bb86f;
+	color: #ffffff;
 	font-size: 14px; font-size: 1.4rem;
 }
 
@@ -43,9 +46,16 @@ header {
 
 }
 
-#maincolum-Container {
+footer {
 	position: relative;
-	z-index: 100;
+	bottom: 0;
+	margin-bottom: 10px;
+	font-size: 12px; font-size: 1.2rem;
+}
+
+#mainColum {
+	position: relative;
+	height: 100%;
 }
 
 /*
@@ -106,7 +116,7 @@ header {
 
 	&.type-login {
 		position: relative;
-		padding-top: 80%;
+		// padding-top: 80%;
 
 		#btn_login {
 		}
@@ -117,7 +127,7 @@ header {
  	a {
 		display: block;
 		margin: 0 auto;
-		padding: 0.8em 0;
+		padding: 0.6em 0;
 		width: 40%;
 		border: 1px solid #cacaca;
 		background-color: #ffffff;
@@ -134,8 +144,6 @@ header {
 		background: linear-gradient(#fff, #e0e0e0);
  	}
 
-
-
 }
 
 
@@ -145,9 +153,18 @@ header {
 
 .comentBox {
 	text-align: center;
+	font-size: 12px; font-size: 1.2rem;
 
 	&#askHelpBox {
-		font-size: 12px; font-size: 1.2rem;
+	}
+
+	&#welcomeMeBox {
+		padding-top: 80%;
+		@include textShadow02();
+	}
+
+	&#infoBox {
+		font-size: 14px; font-size: 1.4rem;
 	}
 }
 

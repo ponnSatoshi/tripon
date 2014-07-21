@@ -4,6 +4,12 @@
 	text-shadow: -1px -1px 1px #000000;
 }
 
+@mixin textShadow02 () {
+	-webkit-text-shadow: 1px 1px 3px #333333;
+	-moz-text-shadow: 1px 1px 3px #333333;
+	text-shadow: 1px 1px 3px #333333;
+}
+
 @mixin boxShadow01 ($type) {
 	-webkit-box-shadow: 2px 2px 4px $type;
 	-moz-box-shadow: 2px 2px 4px $type;
